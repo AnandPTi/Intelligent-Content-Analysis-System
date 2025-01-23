@@ -50,7 +50,7 @@ Example of the response for a GET request, including content and analysis
 
 Example of a POST request to create new content
 
-![Sample response for content creation request](images/postcontentwithmetadata.png)
+![Sample response for content creation request](images/postrequestwithmetadata.png)
 
 Example of the response for a content creation request with metadata
 
