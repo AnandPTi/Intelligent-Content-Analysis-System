@@ -1,6 +1,53 @@
 # Content Management System API
 
 This API provides a set of endpoints for managing and searching content in a content management system (CMS). It utilizes AI-powered content analysis and a vector store for efficient search and retrieval.
+# Content Management System API
+
+## Getting Started
+
+To run the content management system API, follow these steps:
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/AnandPTi/Intelligent-Content-Analysis-System.git
+   ```
+
+2. Navigate to the `backend` directory:
+
+   ```
+   cd backend
+   ```
+
+3. Create a virtual environment and activate it:
+
+   ```
+   python3 -m venv envname
+   source envname/bin/activate
+   ```
+
+4. Install the required dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+5. Create a `.env` file in the `backend` directory and add the following environment variables:
+
+   ```
+   GEMINI_API_KEY=AIzaSyD40****rI0w
+   PINECONE_API_KEY=pcsk****QQbVAFaQ
+   REDIS_URL=redis://default:4kzO****b@redis-18477.c273.us-east-1-2.ec2.redns.redis-cloud.com:18477
+   ```
+
+6. Start the API server:
+
+   ```
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+   This will start the FastAPI server and make the API available at `http://localhost:8000`.
+
 
 ## API Endpoints
 
@@ -23,6 +70,7 @@ This endpoint retrieves the content and analysis data for a specific content ID.
 **Response**: `List[Contentanalysis]`
 
 This endpoint allows you to search for content based on a query and optional filters. It generates embeddings for the query, and then uses the vector store to find the most relevant content. The response includes a list of `Contentanalysis` objects for the top matching content.
+
 
 ## Sample Images
 
