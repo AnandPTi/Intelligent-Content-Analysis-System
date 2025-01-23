@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment folders
+env/
+venv/
+sikhaenv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Test outputs
+.coverage
+.tox/
+.cache/
+nosetests.xml
+coverage.xml
+
+# IDE / editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# Pytest cache
+.pytest_cache/
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore sensitive FastAPI files (if any)
+*.pem
+*.key
